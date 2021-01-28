@@ -1,6 +1,7 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Grid, Typography } from "@material-ui/core";
 import { Language } from "@material-ui/icons";
+import { getPwaUrl } from "../helpers/common";
 
 function DownloadSection() {
   const classes = useStyles();
@@ -29,7 +30,13 @@ function DownloadSection() {
                 className={classes.appButton}
               >
                 <Language className={classes.appLogo} />
-                <Typography align="center" className={classes.appName}>
+                <Typography
+                  align="center"
+                  className={classes.appName}
+                  onClick={() => {
+                    window.location.assign(getPwaUrl());
+                  }}
+                >
                   وب اپلیکیشن
                 </Typography>
               </Button>
@@ -117,7 +124,13 @@ function DownloadSection() {
                 className={classes.appButton}
               >
                 <Language className={classes.appLogo} />
-                <Typography align="center" className={classes.appName}>
+                <Typography
+                  align="center"
+                  className={classes.appName}
+                  onClick={() => {
+                    window.location.assign(getPwaUrl());
+                  }}
+                >
                   وب اپلیکیشن
                 </Typography>
               </Button>
@@ -158,7 +171,11 @@ function DownloadSection() {
         </Grid>
       </Grid>
       <div className={classes.iphone}>
-        <img src="/images/logo_typo.png" alt="روندا" className={classes.logo_type} />
+        <img
+          src="/images/logo_typo.png"
+          alt="روندا"
+          className={classes.logo_type}
+        />
       </div>
     </div>
   );
@@ -169,7 +186,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 800,
     color: "#5d5d5d",
     fontSize: 42,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: 35,
     },
   },
@@ -177,7 +194,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: "#989898",
     marginTop: theme.spacing(4),
     fontSize: 30,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: 30,
     },
   },
@@ -189,7 +206,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     minHeight: "100vh",
     paddingRight: theme.spacing(8),
     position: "relative",
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       backgroundImage: "none",
     },
   },
@@ -207,8 +224,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.down('sm')]: {
-      display: "none"
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
     },
   },
   logo_type: {
@@ -220,8 +237,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   buttonContainer: {
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
-    [theme.breakpoints.down('sm')]: {
-      justifyContent: "center"
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
     },
   },
   appName: {

@@ -8,10 +8,7 @@ function ThirdSection() {
   return (
     <div className={classes.section3} id="section-3">
       <Typography align="center" variant="h3" className={classes.heading}>
-        چرا ما ؟
-      </Typography>
-      <Typography align="center" variant="h4" className={classes.subhead}>
-        بیش از 1000 کاربر فعال و راضی
+        چرا روندا ؟
       </Typography>
       <div className={classes.gridWrapper}>
         <Grid xs={10} container justify="center" spacing={matches ? 1 : 6}> 
@@ -44,7 +41,7 @@ function ThirdSection() {
                 تخفیف سفارش اول
               </Typography>
               <Typography align="center" className={classes.subtitle}>
-              با کد HiROnda اولین سفارش شما از روندا ۲۵ هزارتومان تخفیف خواهد شد
+              با کد HIRONDA اولین سفارش شما از روندا شامل ۲۵ هزارتومان تخفیف خواهد شد
               </Typography>
             </Paper>
           </Grid>
@@ -58,7 +55,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   heading: {
     fontWeight: 800,
     color: "#5d5d5d",
-    fontSize: 42
+    fontSize: 42,
+    marginTop: theme.spacing(10)
   },
   subhead: {
     color: "#989898",

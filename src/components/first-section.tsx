@@ -1,6 +1,7 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Typography } from "@material-ui/core";
 import { Language, PhoneAndroid } from "@material-ui/icons";
+import { getPwaUrl } from "../helpers/common";
 
 function FirstSection() {
   const classes = useStyles();
@@ -21,6 +22,9 @@ function FirstSection() {
           color="primary"
           endIcon={<Language className={classes.buttonIcon} />}
           className={classes.button}
+          onClick={() => {
+            window.location.assign(getPwaUrl());
+          }}
         >
           ورود به وب اپلیکیشن
         </Button>
