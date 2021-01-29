@@ -10,7 +10,11 @@ function FifthSection() {
       <Divider className={classes.divider} />
       <Grid xs={12} container className={classes.gridContainer}>
         <Grid className={classes.gridItem} xs={12} md={4} item>
-          <img src="/images/logo_type_only.png" alt="روندا" className={classes.logoType} />
+          <img
+            src="/images/logo_type_only.png"
+            alt="روندا"
+            className={classes.logoType}
+          />
           <Grid container xs={12} className={classes.linksWrapper}>
             <Grid xs={6} item>
               <Link href="#" className={classes.link}>
@@ -59,11 +63,6 @@ function FifthSection() {
           </Typography>
           <div className={classes.socialWrapper}>
             <img
-              src="/images/ecunion.png"
-              alt="نماد"
-              className={classes.certificateImage}
-            />
-            <img
               src="/images/enamad.png"
               alt="نماد الکترونیک"
               className={classes.certificateImage}
@@ -73,7 +72,7 @@ function FifthSection() {
       </Grid>
       <Divider className={classes.divider} />
       <Typography align="center" className={classes.copyRight}>
-      تمام حقوق مادی و معنوی سایت متعلق به روندا میباشد
+        تمام حقوق مادی و معنوی سایت متعلق به روندا میباشد - 1399
       </Typography>
     </div>
   );
@@ -87,14 +86,14 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   gridContainer: {
     padding: theme.spacing(6),
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       padding: theme.spacing(1),
     },
   },
-  gridItem:{
-    [theme.breakpoints.down('sm')]: {
+  gridItem: {
+    [theme.breakpoints.down("sm")]: {
       marginBottom: theme.spacing(4),
-      textAlign: 'center'
+      textAlign: "center",
     },
   },
   subhead: {
@@ -106,7 +105,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingRight: theme.spacing(8),
     paddingLeft: theme.spacing(8),
     position: "relative",
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       paddingLeft: theme.spacing(2),
     },
   },
@@ -126,7 +125,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   linksWrapper: {
     marginTop: theme.spacing(1),
     padding: theme.spacing(2),
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       padding: theme.spacing(1),
     },
   },
@@ -141,19 +140,19 @@ const useStyles = makeStyles((theme: Theme) => ({
       textDecoration: "none",
       color: "#000",
     },
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       marginBottom: theme.spacing(2),
     },
   },
   certificateImage: {
     height: 110,
-    marginLeft: theme.spacing(1)
+    marginLeft: theme.spacing(1),
   },
   copyRight: {
-      color: "#b2afaf",
-      fontSize: 15,
-      paddingBottom: theme.spacing(2)
-  }
+    color: "#b2afaf",
+    fontSize: 15,
+    paddingBottom: theme.spacing(2),
+  },
 }));
 
 export default FifthSection;

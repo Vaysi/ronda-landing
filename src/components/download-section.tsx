@@ -28,14 +28,14 @@ function DownloadSection() {
                 variant="outlined"
                 color="default"
                 className={classes.appButton}
+                onClick={() => {
+                  window.location.assign(getPwaUrl());
+                }}
               >
                 <Language className={classes.appLogo} />
                 <Typography
                   align="center"
                   className={classes.appName}
-                  onClick={() => {
-                    window.location.assign(getPwaUrl());
-                  }}
                 >
                   وب اپلیکیشن
                 </Typography>
@@ -122,14 +122,14 @@ function DownloadSection() {
                 variant="outlined"
                 color="default"
                 className={classes.appButton}
+                onClick={() => {
+                  window.location.assign(getPwaUrl());
+                }}
               >
                 <Language className={classes.appLogo} />
                 <Typography
                   align="center"
                   className={classes.appName}
-                  onClick={() => {
-                    window.location.assign(getPwaUrl());
-                  }}
                 >
                   وب اپلیکیشن
                 </Typography>
