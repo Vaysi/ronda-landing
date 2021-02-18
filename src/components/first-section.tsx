@@ -34,6 +34,11 @@ function FirstSection() {
           color="primary"
           endIcon={<PhoneAndroid className={classes.buttonIcon} />}
           className={classes.button}
+          onClick={() => {
+            window.location.assign(
+              "#section-2"
+            );
+          }}
         >
           دریافت اپلیکیشن
         </Button>
