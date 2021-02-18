@@ -1,6 +1,6 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import { Button, Grid, Typography } from "@material-ui/core";
-import { Language } from "@material-ui/icons";
+import { CloudDownload, Language } from "@material-ui/icons";
 import { getPwaUrl } from "../helpers/common";
 
 function DownloadSection() {
@@ -33,10 +33,7 @@ function DownloadSection() {
                 }}
               >
                 <Language className={classes.appLogo} />
-                <Typography
-                  align="center"
-                  className={classes.appName}
-                >
+                <Typography align="center" className={classes.appName}>
                   وب اپلیکیشن
                 </Typography>
               </Button>
@@ -45,7 +42,7 @@ function DownloadSection() {
               <Button
                 variant="outlined"
                 color="default"
-                className={classes.appButton}
+                className={`${classes.appButton}`}
               >
                 <img
                   src="/images/markets/logo_sibche.png"
@@ -55,6 +52,11 @@ function DownloadSection() {
                 <Typography align="center" className={classes.appName}>
                   سیبچه
                 </Typography>
+                <div className={classes.commingSoon}>
+                  <Typography align="center" className={classes.commingSoonText}>
+                    به زودی
+                  </Typography>
+                </div>
               </Button>
             </Grid>
             <Grid item>
@@ -71,6 +73,11 @@ function DownloadSection() {
                 <Typography align="center" className={classes.appName}>
                   سیب اپ
                 </Typography>
+                <div className={classes.commingSoon}>
+                  <Typography align="center" className={classes.commingSoonText}>
+                    به زودی
+                  </Typography>
+                </div>
               </Button>
             </Grid>
             <Grid item>
@@ -87,6 +94,11 @@ function DownloadSection() {
                 <Typography align="center" className={classes.appName}>
                   اناردونی
                 </Typography>
+                <div className={classes.commingSoon}>
+                  <Typography align="center" className={classes.commingSoonText}>
+                    به زودی
+                  </Typography>
+                </div>
               </Button>
             </Grid>
             <Grid item>
@@ -103,6 +115,11 @@ function DownloadSection() {
                 <Typography align="center" className={classes.appName}>
                   آی اپس
                 </Typography>
+                <div className={classes.commingSoon}>
+                  <Typography align="center" className={classes.commingSoonText}>
+                    به زودی
+                  </Typography>
+                </div>
               </Button>
             </Grid>
           </Grid>
@@ -127,11 +144,25 @@ function DownloadSection() {
                 }}
               >
                 <Language className={classes.appLogo} />
-                <Typography
-                  align="center"
-                  className={classes.appName}
-                >
+                <Typography align="center" className={classes.appName}>
                   وب اپلیکیشن
+                </Typography>
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                variant="outlined"
+                color="default"
+                className={classes.appButton}
+                onClick={() => {
+                  window.location.assign(
+                    "https://cdn.qormeh.com/upload/ronda-126.apk"
+                  );
+                }}
+              >
+                <CloudDownload className={classes.appLogo} />
+                <Typography align="center" className={classes.appName}>
+                  دانلود مستقیم
                 </Typography>
               </Button>
             </Grid>
@@ -149,6 +180,11 @@ function DownloadSection() {
                 <Typography align="center" className={classes.appName}>
                   بازار
                 </Typography>
+                <div className={classes.commingSoon}>
+                  <Typography align="center" className={classes.commingSoonText}>
+                    به زودی
+                  </Typography>
+                </div>
               </Button>
             </Grid>
             <Grid item>
@@ -165,6 +201,11 @@ function DownloadSection() {
                 <Typography align="center" className={classes.appName}>
                   Google Play
                 </Typography>
+                <div className={classes.commingSoon}>
+                  <Typography align="center" className={classes.commingSoonText}>
+                    به زودی
+                  </Typography>
+                </div>
               </Button>
             </Grid>
           </Grid>
@@ -261,6 +302,26 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginBottom: theme.spacing(3),
     color: "#ff5821",
   },
+  commingSoon: {
+    width: "100%",
+    height: "100%",
+    position: "absolute",
+    left: 0,
+    right: 0,
+    bottom: 0,
+    top: 0,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,.5)",
+    borderRadius: 26,
+  },
+  commingSoonText: {
+    color: "#fff",
+    fontSize: 18,
+    textShadow: "1px 1px 2px #444",
+    marginTop: 25,
+  }
 }));
 
 export default DownloadSection;

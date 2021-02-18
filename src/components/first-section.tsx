@@ -13,7 +13,7 @@ function FirstSection() {
         هایپرمارکت آنلاین روندا
       </Typography>
       <Typography variant="h4" className={classes.subhead}>
-        روندا همیشه، همه جا، با شما
+      همراهی حرفه‌‌‌ای برای خرید 
       </Typography>
       <div className={classes.buttonWraper}>
         <Button
