@@ -62,7 +62,7 @@ function FifthSection() {
             مجوز ها
           </Typography>
           <div className={classes.socialWrapper}>
-          <a target="_blank" href="https://trustseal.enamad.ir/?id=195650&amp;Code=MyWL9h8opAcMoC0tlQMD">
+          <a rel="noreferrer" target="_blank" href="https://trustseal.enamad.ir/?id=195650&amp;Code=MyWL9h8opAcMoC0tlQMD">
             <img
               src="/images/enamad.png"
               alt="نماد الکترونیک"
@@ -131,6 +131,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     [theme.breakpoints.down("sm")]: {
       padding: theme.spacing(1),
     },
+    paddingRight: 0
   },
   link: {
     fontSize: 20,
