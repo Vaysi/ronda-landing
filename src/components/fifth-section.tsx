@@ -17,7 +17,7 @@ function FifthSection() {
           />
           <Grid container xs={12} className={classes.linksWrapper}>
             <Grid xs={6} item>
-              <Link href="#" className={classes.link}>
+              <Link href="#section-2" className={classes.link}>
                 <Typography>دریافت اپلیکیشن</Typography>
               </Link>
             </Grid>
