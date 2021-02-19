@@ -10,9 +10,16 @@ import ThirdSection from "./components/third-section";
 import FourthSection from "./components/fourth-section";
 import FifthSection from "./components/fifth-section";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+import ReactGA from 'react-ga';
+import { useEffect } from "react";
 
 function App() {
   const classes = useStyles();
+  
+  useEffect(()=>{
+    ReactGA.initialize('G-ZVCRDT2JJ0');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  });
   return (
     <MaterialUiProvider theme={theme}>
       <StylesProvider injectFirst>
