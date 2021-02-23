@@ -27,7 +27,7 @@ const theme = createMuiTheme({
   },
   direction: 'rtl',
   typography: {
-    fontFamily: ['Vazir FD'].join(','),
+    fontFamily: ['Vazir FD','Vazir'].join(','),
     htmlFontSize:  17.5,
   },
 });

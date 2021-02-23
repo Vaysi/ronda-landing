@@ -22,7 +22,7 @@ function FifthSection() {
               </Link>
             </Grid>
             <Grid xs={6} item>
-              <Link href="#" className={classes.link}>
+              <Link href="/fa/privacy" className={classes.link}>
                 <Typography>قوانین</Typography>
               </Link>
             </Grid>
