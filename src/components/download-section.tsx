@@ -43,6 +43,9 @@ function DownloadSection() {
                 variant="outlined"
                 color="default"
                 className={`${classes.appButton}`}
+                onClick={() => {
+                  window.location.assign('https://sibche.com/applications/ronda');
+                }}
               >
                 <img
                   src="/images/markets/logo_sibche.png"
@@ -52,13 +55,47 @@ function DownloadSection() {
                 <Typography align="center" className={classes.appName}>
                   سیبچه
                 </Typography>
-                <div className={classes.commingSoon}>
-                  <Typography align="center" className={classes.commingSoonText}>
-                    به زودی
-                  </Typography>
-                </div>
               </Button>
             </Grid>
+            <Grid item>
+              <Button
+                variant="outlined"
+                color="default"
+                className={classes.appButton}
+                onClick={() => {
+                  window.location.assign('https://anardoni.com/ios/app/HP4vc3sGt');
+                }}
+              >
+                <img
+                  src="/images/markets/anardooni_logo.png"
+                  alt="دانلود از اناردونی"
+                  className={classes.appLogo}
+                />
+                <Typography align="center" className={classes.appName}>
+                  اناردونی
+                </Typography>
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                variant="outlined"
+                color="default"
+                className={classes.appButton}
+                onClick={() => {
+                  window.location.assign('https://iapps.ir/app/%D8%B1%D9%88%D9%86%D8%AF%D8%A7/657088501');
+                }}
+              >
+                <img
+                  src="/images/markets/logo_i_apps.png"
+                  alt="دانلود از آی اپس"
+                  className={classes.appLogo}
+                />
+                <Typography align="center" className={classes.appName}>
+                  آی اپس
+                </Typography>
+              </Button>
+            </Grid>
+
             <Grid item>
               <Button
                 variant="outlined"
@@ -72,48 +109,6 @@ function DownloadSection() {
                 />
                 <Typography align="center" className={classes.appName}>
                   سیب اپ
-                </Typography>
-                <div className={classes.commingSoon}>
-                  <Typography align="center" className={classes.commingSoonText}>
-                    به زودی
-                  </Typography>
-                </div>
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-              >
-                <img
-                  src="/images/markets/anardooni_logo.png"
-                  alt="دانلود از اناردونی"
-                  className={classes.appLogo}
-                />
-                <Typography align="center" className={classes.appName}>
-                  اناردونی
-                </Typography>
-                <div className={classes.commingSoon}>
-                  <Typography align="center" className={classes.commingSoonText}>
-                    به زودی
-                  </Typography>
-                </div>
-              </Button>
-            </Grid>
-            <Grid item>
-              <Button
-                variant="outlined"
-                color="default"
-                className={classes.appButton}
-              >
-                <img
-                  src="/images/markets/logo_i_apps.png"
-                  alt="دانلود از آی اپس"
-                  className={classes.appLogo}
-                />
-                <Typography align="center" className={classes.appName}>
-                  آی اپس
                 </Typography>
                 <div className={classes.commingSoon}>
                   <Typography align="center" className={classes.commingSoonText}>
@@ -171,20 +166,18 @@ function DownloadSection() {
                 variant="outlined"
                 color="default"
                 className={classes.appButton}
+                onClick={() => {
+                  window.location.assign("https://play.google.com/store/apps/details?id=com.arsalweb.ronda");
+                }}
               >
                 <img
-                  src="/images/markets/bazaar.png"
-                  alt="دانلود از بازار"
+                  src="/images/markets/google_play_logo.png"
+                  alt="دانلود از گوگل پلی"
                   className={classes.appLogo}
                 />
                 <Typography align="center" className={classes.appName}>
-                  بازار
+                  Google Play
                 </Typography>
-                <div className={classes.commingSoon}>
-                  <Typography align="center" className={classes.commingSoonText}>
-                    به زودی
-                  </Typography>
-                </div>
               </Button>
             </Grid>
             <Grid item>
@@ -194,12 +187,12 @@ function DownloadSection() {
                 className={classes.appButton}
               >
                 <img
-                  src="/images/markets/google_play_logo.png"
-                  alt="دانلود از گوگل پلی"
+                  src="/images/markets/bazaar.png"
+                  alt="دانلود از بازار"
                   className={classes.appLogo}
                 />
                 <Typography align="center" className={classes.appName}>
-                  Google Play
+                  بازار
                 </Typography>
                 <div className={classes.commingSoon}>
                   <Typography align="center" className={classes.commingSoonText}>

@@ -22,17 +22,13 @@ function App() {
     return (
         <MaterialUiProvider theme={theme}>
             <StylesProvider injectFirst>
-
                 <Router>
-
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route path="/fa/privacy" component={Privacy}/>
                         <Route path="/en/privacy" component={EnPrivacy}/>
                     </Switch>
                 </Router>
-
-
             </StylesProvider>
         </MaterialUiProvider>
     );
