@@ -62,12 +62,13 @@ function FifthSection() {
             مجوز ها
           </Typography>
           <div className={classes.socialWrapper}>
-          <a rel="noreferrer" target="_blank" href="https://trustseal.enamad.ir/?id=195650&amp;Code=MyWL9h8opAcMoC0tlQMD">
+          <a rel="noreferrer" target="_blank" href="https://trustseal.enamad.ir/?id=195650&amp;Code=MyWL9h8opAcMoC0tlQMD" referrerpolicy="origin">
             <img
               src="/images/enamad.png"
               alt="نماد الکترونیک"
               className={classes.certificateImage}
               id="MyWL9h8opAcMoC0tlQMD"
+              referrerpolicy="origin"
             />
             </a>
           </div>

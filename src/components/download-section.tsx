@@ -151,7 +151,7 @@ function DownloadSection() {
                 className={classes.appButton}
                 onClick={() => {
                   window.location.assign(
-                    "https://cdn.qormeh.com/upload/ronda-126.apk"
+                    "https://cdn.qormeh.com/upload/ronda-128.apk"
                   );
                 }}
               >
@@ -190,15 +190,13 @@ function DownloadSection() {
                   src="/images/markets/bazaar.png"
                   alt="دانلود از بازار"
                   className={classes.appLogo}
+                  onClick={() => {
+                    window.location.assign("https://cafebazaar.ir/app/com.arsalweb.ronda");
+                  }}
                 />
                 <Typography align="center" className={classes.appName}>
                   بازار
                 </Typography>
-                <div className={classes.commingSoon}>
-                  <Typography align="center" className={classes.commingSoonText}>
-                    به زودی
-                  </Typography>
-                </div>
               </Button>
             </Grid>
           </Grid>

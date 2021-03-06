@@ -7,10 +7,10 @@ import {makeStyles, Theme} from "@material-ui/core/styles";
 import Privacy from "./components/privacy";
 import EnPrivacy from "./components/enprivacy";
 import Home from "./components/home";
-import {Route, Switch, BrowserRouter as Router} from "react-router-dom"
+import {Route, Switch, BrowserRouter as Router} from "react-router-dom";
 
 import ReactGA from 'react-ga';
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 
 function App() {
     const classes = useStyles();
