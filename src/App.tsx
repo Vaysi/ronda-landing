@@ -6,6 +6,7 @@ import {makeStyles, Theme} from "@material-ui/core/styles";
 
 import Privacy from "./components/privacy";
 import EnPrivacy from "./components/enprivacy";
+import ChangeLogs from "./components/changes";
 import Home from "./components/home";
 import {Route, Switch, BrowserRouter as Router} from "react-router-dom";
 
@@ -27,6 +28,7 @@ function App() {
                         <Route exact path="/" component={Home}/>
                         <Route path="/fa/privacy" component={Privacy}/>
                         <Route path="/en/privacy" component={EnPrivacy}/>
+                        <Route path="/fa/changes" component={ChangeLogs}/>
                     </Switch>
                 </Router>
             </StylesProvider>
