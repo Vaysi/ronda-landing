@@ -12,7 +12,7 @@ function Changes() {
           </Typography>
           <Typography align="right" variant="h4" className={classes.subhead}>
             <ol>
-                  <li>تغير نام برند به روندا</li>
+                  <li>تغیير نام برند به روندا</li>
                   <li>افزودن هایپر ماركت روندا</li>
                   <li>افزایش سرعت نرم افزار</li>
                   <li>برطرف سازی برخی ايرادات جزئی</li>
