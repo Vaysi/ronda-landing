@@ -8,7 +8,7 @@ function Changes() {
       <Grid container className={classes.gridContainer}>
         <Grid item xs={12} md={8}>
           <Typography align="right" variant="h3" className={classes.heading}>
-            لیست تغیرات :
+            لیست تغییرات :
           </Typography>
           <Typography align="right" variant="h4" className={classes.subhead}>
             <ol>
