@@ -1,0 +1,20 @@
+.AboutUs-wholePage-container {
+  direction: rtl;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.AboutUs-title {
+  font-size: 24px;
+  color: #ff5821;
+  font-family: "VazirBold";
+  text-align: center;
+}
+.AboutUs-content {
+  font-size: 14px;
+  font-family: "VazirFd";
+  direction: rtl;
+  margin: 15px;
+  text-align: justify;
+}

@@ -28,6 +28,7 @@ function Home() {
   const query = useQuery();
   const [welcomeModal, setWelcomeModal] = useState<boolean>(false);
 
+
   useEffect(function () {
     if (query.get("refer") == "ghormeh") {
       setWelcomeModal(true);

@@ -41,7 +41,7 @@ function ThirdSection() {
                 تخفیف سفارش اول
               </Typography>
               <Typography align="center" className={classes.subtitle}>
-              با کد HIRONDA اولین سفارش شما از روندا شامل ۲۵ هزارتومان تخفیف خواهد شد
+              با کد HIRONDA اولین سفارش شما از روندا شامل ۲۰ هزارتومان تخفیف خواهد شد
               </Typography>
             </Paper>
           </Grid>

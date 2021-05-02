@@ -8,6 +8,7 @@ import Privacy from "./components/privacy";
 import EnPrivacy from "./components/enprivacy";
 import ChangeLogs from "./components/changes";
 import Home from "./components/home";
+import AboutUs from "./screens/aboutUs/AboutUs";
 import {Route, Switch, BrowserRouter as Router} from "react-router-dom";
 
 import ReactGA from 'react-ga';
@@ -29,6 +30,7 @@ function App() {
                         <Route path="/fa/privacy" component={Privacy}/>
                         <Route path="/en/privacy" component={EnPrivacy}/>
                         <Route path="/fa/changes" component={ChangeLogs}/>
+                        <Route path="/AboutUs" component={AboutUs}/>
                     </Switch>
                 </Router>
             </StylesProvider>
